@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Profile</title>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Personal Profile</h1>
+        <p>Hello! Welcome to my personal webpage.</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a> |
+        <a href="#academic">Academic Information</a> |
+        <a href="#contact">Contact Me</a>
+    </nav>
+
+    <hr>
+
+    <main>
+
+        <section id="about">
+            <h2>About Me</h2>
+
+            <p>
+                Hello! My name is <b>Mustakim Islam Shihab</b>.
+                I am a <i>Software Engineering student</i> at
+                Daffodil International University.
+                I enjoy learning <u>programming and web development</u>.
+                My goal is to become a
+                <mark>professional software developer</mark>.
+            </p>
+
+            <h3>My Picture</h3>
+            <img src="profile.jpg" alt="My Profile Picture"
+                 width="200" height="200">
+
+            <h3>My Introduction Video</h3>
+            <video width="320" height="240" controls>
+                <source src="intro.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+
+            <h3>More About Me</h3>
+            <details>
+                <summary>Click here to learn more about me</summary>
+                <p>
+                    My hobbies include gaming, traveling, reading,
+                    and gardening. I am interested in Python
+                    programming and building software projects.
+                </p>
+            </details>
+        </section>
+
+        <hr>
+
+        <section id="academic">
+            <h2>My Academic Information</h2>
+
+            <table border="1" cellpadding="10">
+                <tr>
+                    <th>Degree</th>
+                    <th>Institution</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>SSC</td>
+                    <td>My School</td>
+                    <td>Completed</td>
+                </tr>
+                <tr>
+                    <td>HSC</td>
+                    <td>My College</td>
+                    <td>Completed</td>
+                </tr>
+                <tr>
+                    <td>B.Sc. in Software Engineering</td>
+                    <td>Daffodil International University</td>
+                    <td>Studying</td>
+                </tr>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form action="#" method="post">
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your name" required>
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email" required>
+                <br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"
+                       placeholder="Enter your password" required>
+                <br><br>
+
+                <p>Gender:</p>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label>
+                <br><br>
+
+                <p>My Hobbies:</p>
+                <input type="checkbox" id="gaming" name="hobbies"
+                       value="Gaming">
+                <label for="gaming">Gaming</label>
+
+                <input type="checkbox" id="reading" name="hobbies"
+                       value="Reading">
+                <label for="reading">Reading</label>
+
+                <input type="checkbox" id="traveling" name="hobbies"
+                       value="Traveling">
+                <label for="traveling">Traveling</label>
+
+                <input type="checkbox" id="gardening" name="hobbies"
+                       value="Gardening">
+                <label for="gardening">Gardening</label>
+                <br><br>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Interactive Button</h2>
+            <button type="button"
+                onclick="alert('Thank you for visiting my profile!')">
+                Click Me
+            </button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mustakim Islam Shihab. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
